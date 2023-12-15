@@ -13,11 +13,7 @@
 
 ![Site Preview](./source/images/SitePreview.png)
 
-
-
 ![mobile preview](./source/images/mobile1.png) ![mobile preview](./source/images/mobile2.png)
-
-
 
 ## 安装说明
 
@@ -58,11 +54,11 @@ $ vim themes/Wikitten/_config.yml
 这里列出了这些插件的功能作用：
 
 ```json
-hexo-autonofollow	    // 打开非本站链接时自动开启新标签页
+hexo-autonofollow     // 打开非本站链接时自动开启新标签页
 hexo-directory-category // 根据文章文件目录自动为文章添加分类
-hexo-generator-feed	    // 生成 RSS 源
-hexo-generator-json-content	// 生成全站文章 json 内容，用于全文搜索
-hexo-generator-sitemap	// 生成全站站点地图 sitemap
+hexo-generator-feed     // 生成 RSS 源
+hexo-generator-json-content // 生成全站文章 json 内容，用于全文搜索
+hexo-generator-sitemap // 生成全站站点地图 sitemap
 ```
 
 你可以将这些插件合并到**站点**的 `package.json` 文件中通过 `npm install` 一次安装，
@@ -92,8 +88,6 @@ math:
   engine: mathjax
 ```
 
-
-
 ### 启用
 
 修改站点 `_config.yml` 文件中的 `theme` 选项为 **`Wikitten`**。
@@ -104,8 +98,6 @@ math:
 $ cd themes/Wikitten
 $ git pull origin master
 ```
-
-
 
 ## 配置说明
 
@@ -163,7 +155,7 @@ nofollow:
 
 **在开始之前，首先请将主题配置文件示例中「我」的信息修改为「你」自己的信息，其中包括 `profile` `social_links` `history_control`等配置项。**
 
-### `profile`、`comment`、`Share` 和 `miscellaneous` 项都是 **默认关闭的**！ 
+### `profile`、`comment`、`Share` 和 `miscellaneous` 项都是 **默认关闭的**
 
 （你任然可以打开那些选项，只是不推荐这样做。）
 
@@ -184,21 +176,8 @@ widgets: # 挂件，默认指开启了分类这一栏
     # - tag
     # - tagcloud
     # - links
-    
-# History version 
-history_control: # 启用这一项使得 wiki 能有历史版本的功能（查看源码、在线编辑、对比历史变动）
-    enable: true
-    server_link: https://github.com # 版本控制服务器，推荐使用 GitHub https://github.com
-    user: <your GitHub name>
-    repertory: <your repertory name of this wiki source code>
-    branch: <branch name of this wiki site source code>
 ```
-
-
 
 ## 版权协议
 
 [MIT LICENSE](./LICENSE)
-
-
-
